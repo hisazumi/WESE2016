@@ -1,0 +1,102 @@
+\documentclass{sig-alternate-05-2015}
+
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fontspec}
+\usepackage{fixacm}
+\usepackage{url}
+
+\makeatletter
+\def\maxwidth{
+\ifdim\Gin@nat@width>\linewidth
+    \linewidth
+\else
+    \Gin@nat@width
+\fi}
+\makeatother
+\let\Oldincludegraphics\includegraphics
+\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=\maxwidth]{#1}}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+
+
+\begin{document}
+\setcopyright{acmcopyright}
+\doi{10.475/123_4}
+\isbn{123-4567-24-567/08/06}
+\conferenceinfo{WESE '16}{Oct. 6, 2016, Pittsburgh, PA, USA}
+\acmPrice{15.00}
+$if(title)$
+\title{$title$$if(subtitle)$\\\vspace{0.5em}{\large $subtitle$}$endif$}
+$endif$
+
+\numberofauthors{5}
+\author{
+\alignauthor
+Kenji Hisazumi\\
+       \affaddr{System LSI Reserach Center}\\
+       \affaddr{Kyushu University}\\
+       \affaddr{744 Motooka, Nishi-ku}\\
+       \affaddr{Fukuoka, Fukuoka, Japan}\\
+       \affaddr{nel@slrc.kyushu-u.ac.jp}
+\alignauthor
+Shigeru Ishida\\
+       \affaddr{Information-technology Promotion Agency}\\
+       \affaddr{2-28-8 Komagome, Bunkyo-ku}\\
+       \affaddr{Tokyo, Japan}\\
+       \affaddr{s-ishida@ipa.go.jp}
+\alignauthor
+Mitsuhiro Matsuda\\
+       \affaddr{Information-technology Promotion Agency}\\
+       \affaddr{2-28-8 Komagome, Bunkyo-ku}\\
+       \affaddr{Tokyo, Japan}\\
+       \affaddr{m-matsu@ipa.go.jp}
+\alignauthor
+Yukihiro Mihara\\
+       \affaddr{Information-technology Promotion Agency}\\
+       \affaddr{2-28-8 Komagome, Bunkyo-ku}\\
+       \affaddr{Tokyo, Japan}\\
+       \affaddr{y-mihara@ipa.go.jp}
+\alignauthor
+Naoshi Uchihira\\
+       \affaddr{Japan Advanced Institute of Science and Technology}\\
+       \affaddr{1-1 Asahidai, Nomi}\\
+       \affaddr{Ishikawa, Japan}\\
+       \affaddr{uchihira@jaist.ac.jp}
+}
+
+\maketitle
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010520.10010553.10010562</concept_id>
+  <concept_desc>Computer systems organization~Embedded systems</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+</ccs2012>  
+\end{CCSXML}
+
+\ccsdesc[500]{Computer systems organization~Embedded systems}
+
+\printccsdesc
+
+\keywords{Recurring Trouble Prevension Plan; Root Cause Analysis; Education}
+
+$body$
+
+\end{document}
